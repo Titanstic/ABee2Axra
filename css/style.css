@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F5F5F5;
+    font-family: sans-serif;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+/* Start Header Section  */
+
+.navbar {
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.navbar-brand {
+    font-size: 1.25rem;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    white-space: nowrap;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    margin-left: 3rem;
+}
+
+.navbar-brand img {
+    padding-right: 10px;
+}
+
+
+/* End Header Section  */
+
+
+/* Start Form Section  */
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* start advertisment */
+
+.container .adevertisment-container {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.adevertisments {
+    overflow: hidden;
+    position: relative;
+}
+
+.adevertisments img {
+    width: 500px;
+}
+
+
+/* end advertisment */
+
+
+/* start form  */
+
+.form-container {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-form {
+    width: 70%;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    width: 100%;
+    background: #D9D9D9;
+    font-size: 1rem;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    outline: 0;
+    padding: 15px 20px;
+}
+
+.newmember {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.signups {
+    color: #FFB600;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 1em;
+}
+
+.signupicons {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.signupicons i {
+    font-size: 1.8rem;
+}
+
+
+/* end form  */
+
+
+/* End Form Section  */
