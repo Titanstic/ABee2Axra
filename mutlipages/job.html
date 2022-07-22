@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
+    <title>Job</title>
     <!-- fav icon  -->
     <link href="../assets/img/twemoji_honeybee.png" rel="icon" type="image/png" sizes="16x16" />
     <!-- fontawasome css1  -->
@@ -24,8 +24,8 @@
         </nav>
 
         <div class="navbar-nav">
-            <a href="./profile.html" class="nav-item active">My Profile</a>
-            <a href="./job.html" class="nav-item">Job</a>
+            <a href="./profile.html" class="nav-item">My Profile</a>
+            <a href="./job.html" class="nav-item active">Job</a>
             <a href="#" class="nav-item">Upload CV</a>
         </div>
 
@@ -38,119 +38,130 @@
 
     <!-- Start Section  -->
     <section>
-        <!-- start profile  -->
-        <div class="profile-group">
-            <!-- start edit profile  -->
-            <div class="edit-profile">
-                <div class="profile-img">
-                    <img src="../assets/img/profile.png" alt="profile">
+        <!-- start filter  -->
+        <div class="filter-group">
+            <!-- start filter-header  -->
+            <div class="filter-header">
+                <h2>Filter</h2>
+                <a href="#">Clear all</a>
+            </div>
+            <!-- end filter-header  -->
+
+            <!-- start filter-experience  -->
+            <div class="filter-experience">
+
+                <div class="experience-substitle">
+                    <h4>Experience Level</h4>
+                    <a href="#">Clear</a>
                 </div>
-                <table class="info">
-                    <tr>
-                        <td>Name</td>
-                        <td>Nay Ye</td>
-                    </tr>
-                    <tr>
-                        <td>Phone</td>
-                        <td>0900000</td>
-                    </tr>
-                    <tr>
-                        <td>About</td>
-                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
-                    </tr>
-                    <tr>
-                        <td>Date of Birth</td>
-                        <td>30/12/1999</td>
-                    </tr>
-                    <tr>
-                        <td>NRC</td>
-                        <td>12/XXXX(X)000000</td>
-                    </tr>
-                    <tr>
-                        <td>Prefer contract plan</td>
-                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
-                    </tr>
-                    <tr>
-                        <td>Address</td>
-                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
-                    </tr>
-                </table>
-                <div class="edits">
-                    <a href="#">Edit Profile</a>
+
+                <div class="experience-input-group">
+                    <div class="experience-input">
+                        <div>
+                            <input type="checkbox" id="entry" name="entry" value="entry" checked />
+                            <label for="entry">Entry Level</label>
+                        </div>
+                        <p>255 posts</p>
+                    </div>
+
+                    <div class="experience-input">
+                        <div>
+                            <input type="checkbox" id="senior" name="senior" value="senior" />
+                            <label for="senior">Senior Level</label>
+                        </div>
+                        <p>127 posts</p>
+                    </div>
+
+                    <div class="experience-input">
+                        <div>
+                            <input type="checkbox" id="expert" name="expert" value="expert" />
+                            <label for="expert">Expert-Non Manager</label>
+                        </div>
+                        <p>3posts</p>
+                    </div>
+
+                    <div class="experience-input">
+                        <div>
+                            <input type="checkbox" id="manager" name="manager" value="manager" />
+                            <label for="manager">Manager</label>
+                        </div>
+                        <p>70 posts</p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- end filter-experience  -->
+
+            <!-- start filter-location -->
+            <div class="filter-experience">
+                <div class="experience-substitle">
+                    <h4>Loaction</h4>
+                    <a href="#">Clear</a>
+                </div>
+
+                <div class="experience-input-group">
+                    <div class="experience-input">
+                        <div>
+                            <input type="checkbox" id="site" name="site" value="site" />
+                            <label for="site">On site</label>
+                        </div>
+                        <p>255 posts</p>
+                    </div>
+
+                    <div class="experience-input">
+                        <img src="../assets/img/icons/search.png" class="loca-search" alt="search" />
+                        <input type="text" id="loaction-input" class="loaction-input" name="location" placeholder="Search by loaction" />
+                    </div>
+
+                    <div class="experience-input">
+                        <div>
+                            <input type="checkbox" id="remote" name="remote" value="remote" checked/>
+                            <label for="remote">Remote</label>
+                        </div>
+                        <p>127 posts</p>
+                    </div>
                 </div>
             </div>
-            <!-- end edit profile  -->
+            <!-- end filter-location  -->
 
-            <!-- start experience group  -->
-            <div class="experience-group">
-                <!-- start work experience  -->
-                <div class="experience-container">
-                    <div class="experience-header">
-                        <h3>Work Experience</h3>
-                        <img src="../assets/img/icons/experience.png" alt="">
+            <!-- start filter-type  -->
+            <div class="filter-experience">
+
+                <div class="experience-substitle">
+                    <h4>Type</h4>
+                    <a href="#">Clear</a>
+                </div>
+
+                <div class="experience-input-group">
+                    <div class="experience-input">
+                        <div>
+                            <input type="checkbox" id="type-remote" name="type-remote" value="type-remote" checked />
+                            <label for="type-remote">Remote Level</label>
+                        </div>
+                        <p>255 posts</p>
                     </div>
 
-                    <div class="experience-body">
-                        <div class="subtitle-position">
-                            <p class="position">Junior UI Designer</p>
-                            <p class="company">ABC company - Fulltime</p>
+                    <div class="experience-input">
+                        <div>
+                            <input type="checkbox" id="freelance" name="freelance" value="freelance" checked/>
+                            <label for="freelance">Freelance</label>
                         </div>
-                        <div class="months">
-                            <p>2 Months</p>
-                        </div>
+                        <p>127 posts</p>
                     </div>
 
-                    <div class="experience-body">
-                        <div class="subtitle-position">
-                            <p class="position">Intern UI Designer</p>
-                            <p class="company">Axratech - Intern</p>
+                    <div class="experience-input">
+                        <div>
+                            <input type="checkbox" id="part-time" name="part-time" value="part-time" />
+                            <label for="part-time">Part Time</label>
                         </div>
-                        <div class="months">
-                            <p>2 Months</p>
-                        </div>
-                    </div>
-
-                    <div class="experience-footer">
-                        <a href="#">See More</a>
+                        <p>3posts</p>
                     </div>
                 </div>
-                <!-- end work experience  -->
 
-                <!-- start top skill  -->
-                <div class="experience-container">
-                    <div class="experience-header">
-                        <h3>Top Skills</h3>
-                        <img src="../assets/img/icons/skill.png" alt="skill" />
-                    </div>
-
-                    <div class="experience-body">
-                        <ul class="subtitle-position">
-                            <li class="position">UI Design</li>
-                            <li class="position">UX Design</li>
-                            <li class="position">UX Research</li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- end top skill  -->
-
-                <!-- start achievement  -->
-                <div class="experience-container">
-                    <div class="experience-header">
-                        <h3>Education </h3>
-                        <img src="../assets/img/icons/achievement.png" alt="achievements" />
-                    </div>
-
-                    <div class="experience-body">
-                        <ul>
-                            <li>University of Computer Studies Yangon (UCSY)</li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- end achievement  -->
             </div>
-            <!-- end experience group  -->
+            <!-- end filter-type  -->
         </div>
-        <!-- end profile  -->
+        <!-- end filter  -->
 
         <!-- start find-job-group  -->
         <div class="find-job-group">
@@ -285,7 +296,6 @@
             <!-- end job posts  -->
         </div>
         <!-- end find-job-group  -->
-
     </section>
     <!-- End Section  -->
 </body>

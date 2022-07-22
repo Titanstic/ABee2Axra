@@ -103,7 +103,7 @@ section {
 /* start profile  */
 
 .profile-group {
-    width: 20%;
+    width: 25%;
 }
 
 
@@ -111,25 +111,21 @@ section {
 
 .profile-group .edit-profile {
     background-color: var(--background-color);
-    text-align: center;
     padding: 30px;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
     border-radius: 14px;
     margin-bottom: 15px;
 }
 
-.edit-profile p {
-    margin: 10px 0;
+.edit-profile .profile-img,
+.edit-profile .edits {
+    text-align: center;
 }
 
-.edit-profile p:first-of-type {
-    color: #000;
-    font-size: 17px;
-    font-weight: bolder;
-}
-
-.edit-profile p:last-of-type {
-    color: var(--seondary-color);
+.edit-profile .info {
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 10px;
 }
 
 .edit-profile a {
@@ -141,15 +137,26 @@ section {
 
 /* end edit profile  */
 
+.experience-group {
+    background-color: var(--background-color);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    padding: 20px 20px;
+    margin-bottom: 15px;
+}
+
 
 /* start work experience  */
 
 .experience-container {
-    background-color: var(--background-color);
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 14px;
-    padding: 20px 10px;
-    margin-bottom: 15px;
+    border-bottom: 1px groove rgba(0, 0, 0, 0.391);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.experience-container:last-of-type {
+    border-bottom: 0;
+    padding-bottom: 0;
 }
 
 .experience-container .experience-header {
@@ -168,18 +175,6 @@ section {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
-}
-
-.experience-subtitle {
-    display: flex;
-}
-
-.subtitle-img {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    margin-right: 5px;
-    overflow: hidden;
 }
 
 .subtitle-position .position {
@@ -215,8 +210,7 @@ section {
 .experience-body ul {
     font-size: 15px;
     font-weight: 500;
-    list-style-image: url(../assets/img/icons/li.png);
-    list-style-position: inside;
+    list-style-type: none;
 }
 
 .experience-body ul li {
@@ -233,7 +227,7 @@ section {
 /* start find-job-group  */
 
 .find-job-group {
-    width: 57%;
+    width: 63%;
 }
 
 
@@ -253,22 +247,24 @@ section {
 }
 
 .find-job-group .search-group {
+    background-color: #D9D9D9;
+    border-radius: 6px;
     margin-bottom: 20px;
     position: relative;
 }
 
 .search-group img,
-.search-group p {
+.search-group select {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
 }
 
 .search-group input {
-    width: 100%;
-    background-color: #D9D9D9;
-    border-radius: 6px;
-    padding: 15px 50px;
+    width: 60%;
+    background: transparent;
+    margin-left: 8%;
+    padding: 15px 0;
     border: none;
     outline: none;
 }
@@ -277,8 +273,13 @@ section {
     left: 3%;
 }
 
-.search-group p {
-    right: 10%;
+.search-group select {
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    right: 3%;
 }
 
 .find-job div:last-of-type {
@@ -433,7 +434,7 @@ section {
 /* start filter  */
 
 .filter-group {
-    width: 20%;
+    width: 25%;
 }
 
 
