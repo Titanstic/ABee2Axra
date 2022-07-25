@@ -12,8 +12,10 @@ jobCards.forEach((jobCard) => {
 document.getElementById("edirprofile").addEventListener("click", function(e) {
     e.preventDefault();
     profileModal.classList.add("active");
+    document.querySelector("body").classList.add("active");
 });
 
 document.querySelector(".close-modal").addEventListener("click", function() {
     profileModal.classList.remove("active");
+    document.querySelector("body").classList.remove("active");
 });
