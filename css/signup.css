@@ -1,0 +1,334 @@
+:root {
+    --priamry-color: #2563EA;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+
+/* Start Container Section  */
+
+.firstcontainer,
+.secondcontainer,
+.thirdcontainer {
+    display: none;
+}
+
+
+/* start first container  */
+
+.navbar {
+    margin-left: 38px;
+    margin-top: 26px;
+}
+
+.navbar-brand {
+    font-size: 1.25rem;
+    color: var(--priamry-color);
+    font-weight: bolder;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.firstcontainer.active {
+    height: 100vh;
+    display: block;
+}
+
+.firstcontainer .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container .first-form-container {
+    width: 30%;
+}
+
+.first-form-container .navigator-group {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.first-form-container .navigator-group .navigator2,
+.first-form-container .navigator-group .navigator3 {
+    width: 10px;
+    height: 10px;
+    background-color: #99AAB580;
+    border-radius: 50%;
+    position: relative;
+}
+
+.first-form-container .navigator-group .navigator2::before,
+.first-form-container .navigator-group .navigator2::after {
+    content: "";
+    width: 90px;
+    height: 2px;
+    background-color: #99AAB580;
+    position: absolute;
+}
+
+.first-form-container .navigator-group .navigator2::before {
+    left: 200%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.first-form-container .navigator-group .navigator2::after {
+    right: 200%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.form-group {
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 3px;
+}
+
+.form-group .form-control,
+.form-group .btn {
+    width: inherit;
+    background-color: #ECECEC;
+    border: 1px solid rgba(153, 170, 181, 0.5);
+    border-radius: 4px;
+    outline: 0;
+    padding: 10px;
+}
+
+.password-group {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.password-group .form-group {
+    position: relative;
+}
+
+.password-group .form-group i {
+    display: none;
+    position: absolute;
+    bottom: 26%;
+    right: 15%;
+    cursor: pointer;
+}
+
+.password-group .form-group i.active {
+    display: block;
+}
+
+.form-group .btn {
+    background-color: var(--priamry-color);
+    font-size: 18px;
+    color: #ffff;
+    cursor: pointer;
+}
+
+.first-form-container .other-login {
+    text-align: center;
+    margin: 15px 0;
+    position: relative;
+}
+
+.other-login p::before,
+.other-login p::after {
+    content: "";
+    width: 160px;
+    height: 2px;
+    background-color: #99AAB580;
+    position: absolute;
+}
+
+.other-login p::before {
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.other-login p::after {
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.login-icon {
+    font-size: 30px;
+    text-align: center;
+}
+
+.login-icon i {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.login-icon i:nth-of-type(2) {
+    margin: 0 20px;
+}
+
+
+/* end first container  */
+
+
+/* start second container  */
+
+.secondcontainer.active {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.second-form-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.second-form-container h3 {
+    color: var(--priamry-color);
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.second-form-container .navigator-group {
+    width: 55%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.second-form-container .navigator-group .navigator1,
+.second-form-container .navigator-group .navigator3 {
+    width: 10px;
+    height: 10px;
+    background-color: #99AAB580;
+    border-radius: 50%;
+    position: relative;
+}
+
+.second-form-container .navigator-group .navigator1::before,
+.second-form-container .navigator-group .navigator3::before {
+    content: "";
+    width: 90px;
+    height: 2px;
+    background-color: #99AAB580;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.second-form-container .navigator-group .navigator1::before {
+    left: 150%;
+}
+
+.second-form-container .navigator-group .navigator3::before {
+    right: 150%;
+}
+
+.second-form-container a {
+    width: 300px;
+    height: 50px;
+    display: block;
+    background-color: var(--priamry-color);
+    color: #FFFFFF;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    letter-spacing: 1px;
+    border-radius: 7px;
+    margin-bottom: 10px;
+}
+
+
+/* end second container  */
+
+
+/* start third container  */
+
+.thirdcontainer.active {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    overflow-y: scroll;
+}
+
+.thirdcontainer .third-img-container {
+    width: 50%;
+}
+
+.third-img-container img {
+    width: 100%;
+}
+
+.thirdcontainer .third-form-container {
+    width: 50%;
+}
+
+.third-form-container .navigator-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.third-form-container .navigator-group {
+    width: 55%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.third-form-container .navigator-group .navigator1,
+.third-form-container .navigator-group .navigator2 {
+    width: 10px;
+    height: 10px;
+    background-color: #99AAB580;
+    border-radius: 50%;
+    position: relative;
+}
+
+.third-form-container .navigator-group .navigator1::before,
+.third-form-container .navigator-group .navigator2::before {
+    content: "";
+    width: 90px;
+    height: 2px;
+    background-color: #99AAB580;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.third-form-container .navigator-group .navigator1::before {
+    left: 150%;
+}
+
+.third-form-container .navigator-group .navigator2::before {
+    left: 150%;
+}
+
+
+/* end third container  */
+
+
+/* End Container Section  */
