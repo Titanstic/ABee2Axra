@@ -25,6 +25,19 @@ body {
     overflow-y: scroll;
 }
 
+.navbar {
+    margin-left: 38px;
+    margin-top: 26px;
+}
+
+.navbar-brand {
+    font-size: 1.25rem;
+    color: var(--priamry-color);
+    font-weight: bolder;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
 .thirdcontainer .third-img-container {
     width: 50%;
 }
