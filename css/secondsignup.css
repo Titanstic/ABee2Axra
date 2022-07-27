@@ -1,0 +1,91 @@
+:root {
+    --priamry-color: #2563EA;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+
+/* start second container  */
+
+.secondcontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.second-form-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.second-form-container h3 {
+    color: var(--priamry-color);
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.second-form-container .navigator-group {
+    width: 55%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.second-form-container .navigator-group .navigator1,
+.second-form-container .navigator-group .navigator3 {
+    width: 10px;
+    height: 10px;
+    background-color: #99AAB580;
+    border-radius: 50%;
+    position: relative;
+}
+
+.second-form-container .navigator-group .navigator1::before,
+.second-form-container .navigator-group .navigator3::before {
+    content: "";
+    width: 90px;
+    height: 2px;
+    background-color: #99AAB580;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.second-form-container .navigator-group .navigator1::before {
+    left: 150%;
+}
+
+.second-form-container .navigator-group .navigator3::before {
+    right: 150%;
+}
+
+.second-form-container a {
+    width: 300px;
+    height: 50px;
+    display: block;
+    background-color: var(--priamry-color);
+    color: #FFFFFF;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    letter-spacing: 1px;
+    border-radius: 7px;
+    margin-bottom: 10px;
+}
+
+
+/* end second container  */

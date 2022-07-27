@@ -1,0 +1,117 @@
+:root {
+    --priamry-color: #2563EA;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+
+/* start third container  */
+
+.thirdcontainer {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    overflow-y: scroll;
+}
+
+.thirdcontainer .third-img-container {
+    width: 50%;
+}
+
+.third-img-container img {
+    width: 100%;
+}
+
+.thirdcontainer .third-form-container {
+    width: 50%;
+}
+
+.third-form-container .navigator-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.third-form-container .navigator-group {
+    width: 55%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.third-form-container .navigator-group .navigator1,
+.third-form-container .navigator-group .navigator2 {
+    width: 10px;
+    height: 10px;
+    background-color: #99AAB580;
+    border-radius: 50%;
+    position: relative;
+}
+
+.third-form-container .navigator-group .navigator1::before,
+.third-form-container .navigator-group .navigator2::before {
+    content: "";
+    width: 90px;
+    height: 2px;
+    background-color: #99AAB580;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.third-form-container .navigator-group .navigator1::before {
+    left: 150%;
+}
+
+.third-form-container .navigator-group .navigator2::before {
+    left: 150%;
+}
+
+
+/* start form  */
+
+.form-group {
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 3px;
+}
+
+.form-group .form-control,
+.form-group .btn {
+    width: inherit;
+    background-color: #ECECEC;
+    border: 1px solid rgba(153, 170, 181, 0.5);
+    border-radius: 4px;
+    outline: 0;
+    padding: 10px;
+}
+
+.form-group .btn {
+    background-color: var(--priamry-color);
+    font-size: 18px;
+    color: #ffff;
+    cursor: pointer;
+}
+
+
+/* end form  */
+
+
+/* end third container  */
